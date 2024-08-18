@@ -1,7 +1,7 @@
 import { defaultWagmiConfig } from '@web3modal/wagmi/react/config'
 
 import { cookieStorage, createStorage } from 'wagmi'
-import { arbitrum, avalanche, mainnet, sepolia, polygon } from 'wagmi/chains'
+import { arbitrum, assetChainTestnet, avalanche, mainnet, polygon, polygonMumbai, sepolia } from 'wagmi/chains'
 
 // Get projectId from https://cloud.walletconnect.com
 // export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
@@ -17,7 +17,7 @@ export const metadata = {
 }
 
 // Create wagmiConfig
-const chains = [mainnet, sepolia, arbitrum, avalanche, polygon];
+const chains = [assetChainTestnet, polygonMumbai, sepolia];
 export const config = defaultWagmiConfig({
     chains,
     projectId,
