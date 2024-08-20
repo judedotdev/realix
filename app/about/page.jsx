@@ -156,7 +156,7 @@ export default function AboutUs() {
                 <div className="max-w-7xl mx-auto text-center">
                     <h2 className="text-3xl font-semibold text-gray-800">Join Us on Our Journey</h2>
                     <p className="mt-4 text-gray-700">
-                        Whether you're an individual looking to tokenize assets or a business seeking innovative solutions, Realix is here to help. Join us as we continue to revolutionize the world of asset ownership.
+                        Whether you&apos;re an individual looking to tokenize assets or a business seeking innovative solutions, Realix is here to help. Join us as we continue to revolutionize the world of asset ownership.
                     </p>
                     <button className="mt-6 px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700">
                         Contact Us
