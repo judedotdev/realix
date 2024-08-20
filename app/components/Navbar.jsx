@@ -49,7 +49,7 @@ export default function Navbar() {
                 </div>
 
                 <div onClick={toggleMenu} className="flex flex-row lg:hidden z-20 items-center">
-                    {showMenu ? <AiOutlineClose size={36} /> : <AiOutlineMenu size={36} />}
+                    {showMenu ? <button><AiOutlineClose size={36} /></button> : <button><AiOutlineMenu size={36} /></button>}
                 </div>
 
                 <div className="flex flex-row justify-center items-center text-center">
