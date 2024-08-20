@@ -13,11 +13,11 @@ export function Wallet() {
             <>
                 {chain?.name && (
                     <button
-                        className="bg-blue-950 hover:bg-blue-900 text-white sm:py-1 px-3 rounded-xl hidden sm:flex items-center sm:gap-1"
+                        className="bg-blue-950 hover:bg-blue-900 text-white md:py-1 px-3 rounded-xl hidden md:flex items-center md:gap-1"
                         id="network"
                         onClick={() => open({ view: "Networks" })}
                     >
-                        <p className="hidden sm:flex"> {chain?.name}</p>
+                        <p className="hidden md:flex"> {chain?.name}</p>
                     </button>
                 )}
                 <button
