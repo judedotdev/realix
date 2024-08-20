@@ -28,7 +28,7 @@ export default function Navbar() {
 
                 <div className="hidden lg:flex flex-row space-x-12 font-semibold justify-center items-center text-center">
                     <Link href="/" onClick={closeMenu}>Home</Link>
-                    <Link href="#" onClick={closeMenu}>Tokenize</Link>
+                    <Link href="/tokenize" onClick={closeMenu}>Tokenize</Link>
                     <div
                         className="relative"
                         onMouseEnter={() => setShowSolutions(true)}
@@ -79,7 +79,7 @@ export default function Navbar() {
                                 id="resources-dropdown"
                                 className="resources flex flex-col absolute top-full left-0 bg-white text-left w-52"
                             >
-                                <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                <Link href="/about" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     About Us
                                 </Link>
                                 <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
@@ -88,7 +88,7 @@ export default function Navbar() {
                                 <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     API Documentation
                                 </Link>
-                                <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                <Link href="/faqs" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     FAQs
                                 </Link>
                                 <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
@@ -115,7 +115,7 @@ export default function Navbar() {
                 {showMenu && (
                     <div className="flex lg:hidden flex-col space-y-2 justify-center items-center text-center mx-auto mt-4 text-lg font-semibold">
                         <Link href="/" onClick={closeMenu}>Home</Link>
-                        <Link href="#" onClick={closeMenu}>Tokenize</Link>
+                        <Link href="/tokenize" onClick={closeMenu}>Tokenize</Link>
                         <div
                             className="relative"
                             onClick={() => setShowSolutions(!showSolutions)}
@@ -164,7 +164,7 @@ export default function Navbar() {
                                     id="resources-dropdown-mobile"
                                     className="resources flex flex-col absolute top-full right-0 bg-white text-left w-52"
                                 >
-                                    <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                    <Link href="/about" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         About Us
                                     </Link>
                                     <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
@@ -173,7 +173,7 @@ export default function Navbar() {
                                     <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         API Documentation
                                     </Link>
-                                    <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                    <Link href="/faqs" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         FAQs
                                     </Link>
                                     <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
