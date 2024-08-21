@@ -54,7 +54,7 @@ export default function Navbar() {
                                 <Link href="/borrow-lend" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     Borrowing &amp; Lending
                                 </Link>
-                                <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                <Link href="/ecommerce" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     eCommerce Platform
                                 </Link>
                             </div>
@@ -140,7 +140,7 @@ export default function Navbar() {
                                     <Link href="/borrow-lend" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         Borrowing &amp; Lending
                                     </Link>
-                                    <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                    <Link href="/ecommerce" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         eCommerce Platform
                                     </Link>
                                 </div>
