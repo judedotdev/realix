@@ -1,10 +1,9 @@
+"use client";
 import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 export default function Home() {
-  function getCurrentYear() {
-    return new Date().getFullYear();
-  }
   return (
     <main className="flex min-h-screen flex-col">
       <Navbar />
@@ -155,16 +154,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white text-center py-8">
-        <div className="max-w-4xl mx-auto">
-          <p>&copy; {getCurrentYear()} Realix. All Rights Reserved.</p>
-          <div className="mt-4">
-            <a href="#" className="mx-2 hover:underline">Contact Us</a>
-            <a href="#" className="mx-2 hover:underline">Privacy Policy</a>
-            <a href="#" className="mx-2 hover:underline">Terms of Service</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

@@ -51,7 +51,7 @@ export default function Navbar() {
                                 <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     Asset Tokenization
                                 </Link>
-                                <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                <Link href="/borrow-lend" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     Borrowing &amp; Lending
                                 </Link>
                                 <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
@@ -82,7 +82,7 @@ export default function Navbar() {
                                 <Link href="/about" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     About Us
                                 </Link>
-                                <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                <Link href="/mobile-app" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     Mobile App
                                 </Link>
                                 <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
@@ -91,10 +91,10 @@ export default function Navbar() {
                                 <Link href="/faqs" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     FAQs
                                 </Link>
-                                <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                <Link href="/blog" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     Blog
                                 </Link>
-                                <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                <Link href="/contact" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                     Contact Us
                                 </Link>
                             </div>
@@ -137,7 +137,7 @@ export default function Navbar() {
                                     <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         Asset Tokenization
                                     </Link>
-                                    <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                    <Link href="/borrow-lend" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         Borrowing &amp; Lending
                                     </Link>
                                     <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
@@ -167,7 +167,7 @@ export default function Navbar() {
                                     <Link href="/about" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         About Us
                                     </Link>
-                                    <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                    <Link href="/mobile-app" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         Mobile App
                                     </Link>
                                     <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
@@ -176,10 +176,10 @@ export default function Navbar() {
                                     <Link href="/faqs" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         FAQs
                                     </Link>
-                                    <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                    <Link href="/blog" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         Blog
                                     </Link>
-                                    <Link href="#" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
+                                    <Link href="/contact" className="hover:bg-sky-400 p-2" onClick={closeMenu}>
                                         Contact Us
                                     </Link>
                                 </div>
