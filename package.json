@@ -11,6 +11,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.51.23",
     "@web3modal/wagmi": "^5.0.11",
+    "cors": "^2.8.5",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",

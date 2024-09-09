@@ -11,8 +11,10 @@ const BORROWING_CONTRACT_ABI = [ /* ABI for Borrowing Contract */];
 const LENDING_CONTRACT_ABI = [ /* ABI for Lending Contract */];
 
 export default function BorrowingAndLending() {
-    const [amount, setAmount] = useState("");
-    const [status, setStatus] = useState("");
+    const [borrowAmount, setBorrowAmount] = useState("");
+    const [lendAmount, setLendAmount] = useState("");
+    const [borrowStatus, setBorrowStatus] = useState("");
+    const [lendStatus, setLendStatus] = useState("");
     const { address } = useAccount();
     const { writeContract, writeContractAsync } = useWriteContract();
 
@@ -36,37 +38,37 @@ export default function BorrowingAndLending() {
 
     const handleBorrow = async () => {
         try {
-            setStatus("Processing...");
-            // const tx = await borrowingContract.write.borrow([amount]);
+            setBorrowStatus("Processing...");
+            // const tx = await borrowingContract.write.borrow([borrowAmount]);
             // await tx.wait();
             const tx = await writeContractAsync({
                 abi: BORROWING_CONTRACT_ABI,
                 address: BORROWING_CONTRACT_ADDRESS,
                 functionName: 'borrow',
-                args: [amount],
+                args: [borrowAmount],
             });
-            setStatus("Borrowing successful!");
+            setBorrowStatus("Borrowing successful!");
         } catch (error) {
             console.error(error);
-            setStatus("An error occurred while borrowing.");
+            setBorrowStatus("An error occurred while borrowing.");
         }
     };
 
     const handleLend = async () => {
         try {
-            setStatus("Processing...");
-            // const tx = await lendingContract.write.lend([amount]);
+            setLendStatus("Processing...");
+            // const tx = await lendingContract.write.lend([lendAmount]);
             // await tx.wait();
             const tx = await writeContractAsync({
                 abi: LENDING_CONTRACT_ABI,
                 address: LENDING_CONTRACT_ADDRESS,
                 functionName: 'lend',
-                args: [amount],
+                args: [lendAmount],
             });
-            setStatus("Lending successful!");
+            setLendStatus("Lending successful!");
         } catch (error) {
             console.error(error);
-            setStatus("An error occurred while lending.");
+            setLendStatus("An error occurred while lending.");
         }
     };
 
@@ -94,8 +96,8 @@ export default function BorrowingAndLending() {
                             <input
                                 type="number"
                                 placeholder="Amount in ETH"
-                                value={amount}
-                                onChange={(e) => setAmount(e.target.value)}
+                                value={borrowAmount}
+                                onChange={(e) => setBorrowAmount(e.target.value)}
                                 className="w-full p-3 border border-gray-300 rounded-lg mb-4"
                             />
                             <button
@@ -104,7 +106,7 @@ export default function BorrowingAndLending() {
                             >
                                 Borrow
                             </button>
-                            {status && <p className="mt-4 text-gray-600">{status}</p>}
+                            {borrowStatus && <p className="mt-4 text-gray-600">{borrowStatus}</p>}
                         </div>
                     </div>
 
@@ -115,8 +117,8 @@ export default function BorrowingAndLending() {
                             <input
                                 type="number"
                                 placeholder="Amount in ETH"
-                                value={amount}
-                                onChange={(e) => setAmount(e.target.value)}
+                                value={lendAmount}
+                                onChange={(e) => setLendAmount(e.target.value)}
                                 className="w-full p-3 border border-gray-300 rounded-lg mb-4"
                             />
                             <button
@@ -125,7 +127,7 @@ export default function BorrowingAndLending() {
                             >
                                 Lend
                             </button>
-                            {status && <p className="mt-4 text-gray-600">{status}</p>}
+                            {lendStatus && <p className="mt-4 text-gray-600">{lendStatus}</p>}
                         </div>
                     </div>
                 </div>
